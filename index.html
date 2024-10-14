@@ -31,23 +31,27 @@
         <div class="nav__bars">
           <i class="nav__bars-icon fa-solid fa-bars"></i>
         </div>
+
         <div class="nav__logo">
           <a href="#" class="logo">F5</a>
         </div>
 
-        <div class="nav__menu"> <!-- add nav__menu--opened tren mobile de mo menu -->
-          <div class="nav__menu-mobile-close">
-            <i class="nav__menu-mobile-close-icon fa-solid fa-xmark"></i>
+        <div class="nav__menu">
+          <div class="mobile__menu">
+            <a href="#" class="logo">F5</a>
+            <i class="mobile__menu-close-icon fa-solid fa-xmark"></i>
           </div>
           <ul class="menu-list">
-            <li class="menu-item menu-item--active">
+            <li class="menu-item">
               <a href="./index.html">Trang chủ</a>
             </li>
             <li class="menu-item">
               <a href="#">Giới thiệu</a>
             </li>
-            <li class="menu-item menu-item--angle-down">
-              <a href="#">Sản phẩm</a>
+            <li class="menu-item">
+              <a href="#" class="has-angle-down">Sản phẩm
+                <i class="angle-down-icon fa-solid fa-angle-down"></i>
+              </a>
               <ul class="submenu-list-1">
                 <li class="menu-item menu-item--level-1">
                   <a href="#">Áo</a>
@@ -150,14 +154,9 @@
             </li>
           </ul>
         </div>
+
         <div class="nav__right">
           <div class="nav__icon">
-            <div class="nav__wishlist-icon">
-              <a href="#" class="wishlist-icon__link">
-                <i class="fa-regular fa-heart"></i>
-                <span class="wishlist-number">11</span>
-              </a>
-            </div>
             <div class="nav__user-icon">
               <a href="#" class="user-icon__link">
                 <i class="fa-regular fa-user"></i>
@@ -1127,7 +1126,7 @@
 
             <div class="form__field">
               <label for="fullname">Tên đầy đủ</label>
-              <input type="text" id="fullname" class="form__control" placeholder="vd: Paul Bui" name="fullname">
+              <input type="text" id="fullname" class="form__control" placeholder="vd: Choco Bui" name="fullname">
               <span class="form__error-msg"></span>
             </div>
 
@@ -1139,7 +1138,7 @@
 
             <div class="form__field">
               <label for="email">Email</label>
-              <input type="email" id="email" class="form__control" placeholder="vd: paulbui@xmail.com" name="email">
+              <input type="email" id="email" class="form__control" placeholder="vd: chocobui@xmail.com" name="email">
               <span class="form__error-msg"></span>
             </div>
 

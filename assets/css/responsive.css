@@ -1,89 +1,14 @@
 /* mobile & ipad-tablet */
 @media (max-width: 1023px) {
-    .menu-list > .menu-item {
-        padding: 0 10px;
-    }
+
 }
 
 /* mobile */
 @media (max-width: 739px) {
-    .row {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .nav__menu {
-        position: absolute;
-        z-index: 999;
-        margin-left: 0;
-        width: 100%;
-        display: none;
-    }
-
-    .nav__menu.nav__menu--opened {
-        display: block;
-    }
-
-    /* nhan vao btn nay se add class nav__menu--opened vao nav__menu */
-    .nav__bars {
-        display: flex;
-        width: 76px;
-        margin-left: 5px;
-    }
-
-    .nav__icon {
-        margin-right: 5px;
-    }
-
-    .nav__logo {
-        margin: 0 auto;
-    }
-
-    .nav__wishlist-icon {
-        display: none;
-    }
-
-    .nav__user-icon {
-        margin: auto;
-    }
-
-    .menu-list {
-        display: block;
-        background-color: #ccc;
-    }
-
-    .menu-list > .menu-item {
-        margin-right: 30px;
-    }
-
-    .menu-list > .menu-item a {
-        width: 100%;
-    }
-
-    .nav__menu.nav__menu--opened .nav__menu-mobile-close {
-        display: flex;
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: 30px;
-    }
-
-    .nav__menu-mobile-close-icon {
-        padding: 5px 10px;
-    }
-
-    .submenu-list-1 {
-        flex-direction: column;
-        position: relative;
-        background-color: #ccc;
-    }
-
-    .submenu-list-1 .menu-item--level-1 {
-        width: 100%;
-        max-width: none;
-        min-width: none;
-    }
 
 
+
+    /* can sua lai, bo ben nay di */
     .footer {
         padding-left: 10px;
         padding-right: 10px;
@@ -92,16 +17,41 @@
 
 /* ipad-tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
-    .menu-list > .menu-item.menu-item--angle-down {
-        padding-right: 20px;
-    }
 
-    .menu-item:first-child {
-        display: none;
-    }
 }
 
 /* pc */
 @media (min-width: 1024px) {
+    .nav__bars,
+    .mobile__menu {
+        display: none;
+    }
     
+    .nav__menu {
+        position: relative;
+        display: block;
+    }
+
+    .menu-list {
+        display: flex;
+        height: 100%;
+    }
+
+    .menu-list > .menu-item {
+        padding: 0 20px;
+    }
+
+    .menu-item a {
+        display: inline-block;
+        line-height: 46px;
+    }
+
+    .menu-item a.has-angle-down {
+        padding-right: 20px;
+    }
+    .has-angle-down .angle-down-icon {
+        padding: 0;
+    }
+
+
 }

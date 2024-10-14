@@ -1,3 +1,21 @@
+// nav -----------------> start
+const navMenu = document.querySelector('.nav__menu');
+document.querySelector('.nav__bars').addEventListener('click', () => {
+    navMenu.classList.toggle('is-active');
+});
+document.querySelector('.mobile__menu-close-icon').addEventListener('click', () => {
+    navMenu.classList.toggle('is-active');
+});
+
+const subMenuList1 = document.querySelector('.submenu-list-1');
+document.querySelector('.has-angle-down .angle-down-icon').addEventListener('click', () => {
+    subMenuList1.classList.toggle('is-active')
+});
+
+// nav -----------------> end
+
+
+
 // Start -----------------> Select color 
 // Get all product color items
 const colorItemList = document.querySelectorAll('.product__color-item')
