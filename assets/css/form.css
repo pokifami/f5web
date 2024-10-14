@@ -1,0 +1,117 @@
+body {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    height: 100vh;
+}
+
+#form-register,
+#form-login {
+    background-color: #fff;
+    min-width: 380px;
+    max-width: 410px;
+    margin: 30px auto;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+}
+
+.form__content {
+    padding: 30px;
+}
+
+.form__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #555;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__close:hover {
+    background-color: var(--text-red);
+    color: var(--text-white);
+}
+
+.form__header {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.form__sub-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.form__sub-header-link,
+.register__confirm a {
+    color: var(--text-red);
+}
+
+.register__confirm p {
+    font-size: 14px;
+}
+
+.form__sub-header-link:hover,
+.register__confirm a:hover {
+    opacity: 0.8;
+}
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form__field--invalid .form__control {
+    border-color: var(--text-red) !important;
+    color: var(--text-red);
+}
+
+.form__control {
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.form__control:hover,
+.form__control:focus {
+    border-color: var(--primary-color);
+}
+
+.form__error-msg {
+    color: var(--text-red);
+    font-weight: 300;
+}
+
+.form__footer {
+    text-align: center;
+}
+
+.form__submit {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    width: 100%;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    touch-action: manipulation;
+}
+
+.register__confirm {
+    color: #555;
+    font-size: 15px;
+    font-weight: 300;
+}

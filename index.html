@@ -1,12 +1,1223 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>F5 Web</title>
+  <link rel="icon" type="image/x-icon" href="./assets/img/favicon/F5-favicon-100x100.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/grid.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
+
 <body>
-  <h1>hello F5</h1>
-  <a href="nav.html">link to nav</a>
+  <div class="app">
+    <!-- header -->
+    <header class="header">
+      <div class="topbar">
+        <div class="topbar__promotion">
+          <a href="./index.html">Săn Deal Best Seller cuối tháng →</a>
+        </div>
+      </div>
+      <nav class="nav">
+        <div class="nav__bars">
+          <i class="nav__bars-icon fa-solid fa-bars"></i>
+        </div>
+        <div class="nav__logo">
+          <a href="#" class="logo">F5</a>
+        </div>
+
+        <div class="nav__menu"> <!-- add nav__menu--opened tren mobile de mo menu -->
+          <div class="nav__menu-mobile-close">
+            <i class="nav__menu-mobile-close-icon fa-solid fa-xmark"></i>
+          </div>
+          <ul class="menu-list">
+            <li class="menu-item menu-item--active">
+              <a href="./index.html">Trang chủ</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">Giới thiệu</a>
+            </li>
+            <li class="menu-item menu-item--angle-down">
+              <a href="#">Sản phẩm</a>
+              <ul class="submenu-list-1">
+                <li class="menu-item menu-item--level-1">
+                  <a href="#">Áo</a>
+                  <ul class="submeu-list-2">
+                    <li class="menu-item menu-item--level-2">
+                      <a href="#">Áo phông</a>
+                    </li>
+                    <li class="menu-item menu-item--level-2">
+                      <a href="#">Áo sơ mi</a>
+                    </li>
+                    <li class="menu-item menu-item--level-2">
+                      <a href="#">Áo kiểu</a>
+                    </li>
+                    <li class="menu-item menu-item--level-2">
+                      <a href="#">Áo khoác</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item--level-1">
+                  <a href="#">Quần</a>
+                  <ul class="submeu-list-2">
+                    <li class="menu-item menu-item--level-2">
+                      <a href="#">Quần jeans</a>
+                    </li>
+                    <li class="menu-item menu-item--level-2">
+                      <a href="#">Quần kaki</a>
+                    </li>
+                    <li class="menu-item menu-item--level-2">
+                      <a href="#">Quần short</a>
+                    </li>
+                    <li class="menu-item menu-item--level-2">
+                      <a href="#">Quần lửng</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item--level-1">
+                  <a href="#">Túi xách</a>
+                  <ul class="submeu-list-2">
+                    <li class="menu-item menu-item--level-2">
+                      <a href="#">Túi xách xxx</a>
+                    </li>
+                    <li class="menu-item menu-item--level-2">
+                      <a href="#">Túi xách xxx</a>
+                    </li>
+                    <li class="menu-item menu-item--level-2">
+                      <a href="#">Túi xách xxx</a>
+                    </li>
+                    <li class="menu-item menu-item--level-2">
+                      <a href="#">Túi xách xxx</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item--level-1">
+                  <a href="#">Giày dép</a>
+                  <ul class="submeu-list-2">
+                    <li class="menu-item menu-item--level-2">
+                      <a href="#">Giày dép xx xx</a>
+                    </li>
+                    <li class="menu-item menu-item--level-2">
+                      <a href="#">Giày dép xx xx</a>
+                    </li>
+                    <li class="menu-item menu-item--level-2">
+                      <a href="#">Giày dép xx xx</a>
+                    </li>
+                    <li class="menu-item menu-item--level-2">
+                      <a href="#">Giày dép xx xx</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item--level-1">
+                  <a href="#">Phụ kiện</a>
+                  <ul class="submeu-list-2">
+                    <li class="menu-item menu-item--level-2">
+                      <a href="#">Phụ kiện xx xx</a>
+                    </li>
+                    <li class="menu-item menu-item--level-2">
+                      <a href="#">Phụ kiện xx xx</a>
+                    </li>
+                    <li class="menu-item menu-item--level-2">
+                      <a href="#">Phụ kiện xx xx</a>
+                    </li>
+                    <li class="menu-item menu-item--level-2">
+                      <a href="#">Phụ kiện xx xx</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="#">Tin tức</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">Liên hệ</a>
+            </li>
+            <li class="menu-item menu-item--flash-sale">
+              <a href="#flash-sale">
+                Flash sale
+                <i class="fa-solid fa-bolt"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__right">
+          <div class="nav__icon">
+            <div class="nav__wishlist-icon">
+              <a href="#" class="wishlist-icon__link">
+                <i class="fa-regular fa-heart"></i>
+                <span class="wishlist-number">11</span>
+              </a>
+            </div>
+            <div class="nav__user-icon">
+              <a href="#" class="user-icon__link">
+                <i class="fa-regular fa-user"></i>
+              </a>
+            </div>
+            <div class="nav__cart-icon">
+              <a href="#" class="cart-icon__link">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span class="cart-number">11</span>
+              </a>
+              <div class="cart-container">
+                <!-- add class 'cart--active to show when hover' -->
+                <div class="cart-empty">
+                  <img src="./assets/img/empty-cart/emptycart.jpeg" class="cart-empty__img" alt="Empty cart">
+                  <p class="cart-empty__msg">Không có sản phẩm nào trong giỏ hàng!</p>
+                </div>
+                <div class="cart-content cart--active">
+                  <p class="cart__header">Sản phẩm trong giỏ hàng</p>
+                  <div class="cart__body">
+                    <div class="cart__list">
+                      <div class="cart__item">
+                        <a href="" class="cart-product-thumbnail">
+                          <img src="./assets/img/product/goods-1-4.jpg" alt="">
+                        </a>
+                        <div class="cart-product-info">
+                          <div class="cart-product__top">
+                            <p class="cart-product__title">T-Shirt Care & Share Đam mê</p>
+                            <p class="cart-product__color">Trắng</p>
+                          </div>
+                          <div class="cart-product__bottom">
+                            <div class="cart-product__quantity">
+                              <label for="quantity-input">Số lượng</label>
+                              <div class="quantity-control">
+                                <span class="minus-btn">-</span>
+                                <input type="text" id="quantity-input" class="quantity-input" disabled value="10">
+                                <span class="plus-btn">+</span>
+                              </div>
+                            </div>
+                            <div class="cart-product__price">
+                              <span class="cart-product__sale-price">189.000đ</span>
+                              <del class="cart-product__original-price">259.000đ</del>
+                              <div>
+                                <span class="cart-product__remove">Xoá</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cart__item">
+                        <a href="" class="cart-product-thumbnail">
+                          <img src="./assets/img/product/goods-1-4.jpg" alt="">
+                        </a>
+                        <div class="cart-product-info">
+                          <div class="cart-product__top">
+                            <p class="cart-product__title">T-Shirt Care & Share Đam mê</p>
+                            <p class="cart-product__color">Trắng</p>
+                          </div>
+                          <div class="cart-product__bottom">
+                            <div class="cart-product__quantity">
+                              <label for="quantity-input">Số lượng</label>
+                              <div class="quantity-control">
+                                <span class="minus-btn">-</span>
+                                <input type="text" id="quantity-input" class="quantity-input" disabled value="10">
+                                <span class="plus-btn">+</span>
+                              </div>
+                            </div>
+                            <div class="cart-product__price">
+                              <span class="cart-product__sale-price">189.000đ</span>
+                              <del class="cart-product__original-price">259.000đ</del>
+                              <div>
+                                <span class="cart-product__remove">Xoá</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cart__item">
+                        <a href="" class="cart-product-thumbnail">
+                          <img src="./assets/img/product/goods-1-4.jpg" alt="">
+                        </a>
+                        <div class="cart-product-info">
+                          <div class="cart-product__top">
+                            <p class="cart-product__title">T-Shirt Care & Share Đam mê</p>
+                            <p class="cart-product__color">Trắng</p>
+                          </div>
+                          <div class="cart-product__bottom">
+                            <div class="cart-product__quantity">
+                              <label for="quantity-input">Số lượng</label>
+                              <div class="quantity-control">
+                                <span class="minus-btn">-</span>
+                                <input type="text" id="quantity-input" class="quantity-input" disabled value="10">
+                                <span class="plus-btn">+</span>
+                              </div>
+                            </div>
+                            <div class="cart-product__price">
+                              <span class="cart-product__sale-price">189.000đ</span>
+                              <del class="cart-product__original-price">259.000đ</del>
+                              <div>
+                                <span class="cart-product__remove">Xoá</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart__footer">
+                    <div class="cart__subtotal-wrap">
+                      <span class="subtotal__title">Tổng tiền:</span>
+                      <span class="subtotal">936.000₫</span>
+                    </div>
+                    <div class="cart__btn">
+                      <a href="#" class="cart__checkout btn">Thanh Toán</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- body -->
+    <div class="body">
+      <!-- slideshow -->
+      <section class="slideshow">
+        <!-- Element: Slide -->
+        <div class="slideshow__slide fade">
+          <div class="slideshow__numbertext">1 / 5</div>
+          <img src="./assets/img/slideshow/slideshow-1.jpg" style="width:100%">
+          <h2 class="slideshow__text">Thời trang từ chất liệu nỉ</h2>
+        </div>
+        <div class="slideshow__slide fade">
+          <div class="slideshow__numbertext">2 / 5</div>
+          <img src="./assets/img/slideshow/slideshow-2.jpg" style="width:100%">
+          <h2 class="slideshow__text">Caption Two</h2>
+        </div>
+        <div class="slideshow__slide fade">
+          <div class="slideshow__numbertext">3 / 5</div>
+          <img src="./assets/img/slideshow/slideshow-3.jpg" style="width:100%">
+          <h2 class="slideshow__text">Caption Three</h2>
+        </div>
+        <div class="slideshow__slide fade">
+          <div class="slideshow__numbertext">4 / 5</div>
+          <img src="./assets/img/slideshow/slideshow-4.jpg" style="width:100%">
+          <h2 class="slideshow__text">Caption Four</h2>
+        </div>
+        <div class="slideshow__slide fade">
+          <div class="slideshow__numbertext">5 / 5</div>
+          <img src="./assets/img/slideshow/slideshow-5.jpg" style="width:100%">
+          <h2 class="slideshow__text">Caption Five</h2>
+        </div>
+        <!-- Element: Controls -->
+        <a class="slideshow__prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="slideshow__next" onclick="plusSlides(1)">&#10095;</a>
+        <!-- Block: Dots -->
+        <div class="dots">
+          <span class="dots__dot" onclick="currentSlide(1)"></span>
+          <span class="dots__dot" onclick="currentSlide(2)"></span>
+          <span class="dots__dot" onclick="currentSlide(3)"></span>
+          <span class="dots__dot" onclick="currentSlide(4)"></span>
+          <span class="dots__dot" onclick="currentSlide(5)"></span>
+        </div>
+      </section>
+
+      <!-- coupons -->
+      <section class="coupons">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-4 m-12 c-12">
+              <div class="coupon__container">
+                <div class="coupon__left">
+                  <div class="coupon__title">
+                    <h4>MIỄN PHÍ VẬN CHUYỂN</h4>
+                    <p>Đơn hàng từ 300k</p>
+                  </div>
+                  <div class="coupon__detail">
+                    <p class="coupon__code">Mã: <strong>F5-2023</strong></p>
+                    <p class="expire__date">HSD: 08/03/2024</p>
+                  </div>
+                </div>
+                <div class="coupon__right">
+                  <button class="coupon__copy btn" data-copy='F5-2023'>Sao chép</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col l-4 m-12 c-12">
+              <div class="coupon__container">
+                <div class="coupon__left">
+                  <div class="coupon__title">
+                    <h4>GIẢM 20%</h4>
+                    <p>Đơn hàng từ 200k</p>
+                  </div>
+                  <div class="coupon__detail">
+                    <p class="coupon__code">Mã: <strong>F5-2023</strong></p>
+                    <p class="expire__date">HSD: 08/03/2024</p>
+                  </div>
+                </div>
+                <div class="coupon__right">
+                  <button class="coupon__copy btn" data-copy='F5-2023'>Đã lưu</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col l-4 m-12 c-12">
+              <div class="coupon__container">
+                <div class="coupon__left">
+                  <div class="coupon__title">
+                    <h4>GIẢM 30%</h4>
+                    <p>Đơn hàng từ 300k</p>
+                  </div>
+                  <div class="coupon__detail">
+                    <p class="coupon__code">Mã: <strong>F5-2023</strong></p>
+                    <p class="expire__date">HSD: 08/03/2024</p>
+                  </div>
+                </div>
+                <div class="coupon__right">
+                  <button class="coupon__copy btn" data-copy='F5-2023'>Sao chép</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- flash-sale -->
+      <section id="flash-sale" class="flash-sale">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-12 m-12 c-12">
+              <div class="flash-sale__heading">
+                <h2 class="flash-sale__title">GIẢM GIÁ SỐC</h2>
+                <div class="flash-sale__timer">
+                  <p>Kết thúc sau:</p>
+                  <div class="timer">
+                    <div class="timer__block timer__days">
+                      <span>19</span>
+                      <span class="day-text">Ngày</span>
+                    </div>
+                    <div class="timer__block timer__hours">
+                      <span>19</span>
+                      <span class="hour-text">Giờ</span>
+                    </div>
+                    <div class="timer__block timer__minutes">
+                      <span>19</span>
+                      <span class="minute-text">Phút</span>
+                    </div>
+                    <div class="timer__block timer__seconds">
+                      <span>19</span>
+                      <span class="second-text">Giây</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col l-2-4">
+              <div class="product">
+                <div class="product__thumbnail">
+                  <div class="product__img">
+                    <a href="#"><img src="./assets/img/product/goods-1-1.jpg" alt="product image"></a>
+                  </div>
+                  <div class="product__select">
+                    <p>Thêm vào giỏ hàng +</p>
+                    <div class="option-select">
+                      <span class="option-select__item">S</span>
+                      <span class="option-select__item">M</span>
+                      <span class="option-select__item">L</span>
+                      <span class="option-select__item">XL</span>
+                      <span class="option-select__item">2XL</span>
+                    </div>
+                  </div>
+                  <div class="product__saleoff">
+                    <p>Sale <span class="product__discount-percent">27%</span></p>
+                  </div>
+                </div>
+                <div class="product__info">
+                  <div class="product__color">
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Trắng / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_trang.jpg);"></span>
+                    </div>
+                    <div class="product__color-item product__color-item--active">
+                      <span class="color-checkmark" data-value="Đen / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_den.jpg);"></span>
+                    </div>
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Xanh Forest / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_xanh_forest.jpg);"></span>
+                    </div>
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Xanh đậm / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/June2023/colorXanh_1A5.jpg);"></span>
+                    </div>
+                  </div>
+                  <div class="product__title">
+                    <a href="#" class="product__title-link">T-Shirt Contton Compact</a>
+                  </div>
+                  <p class="product__sub-title">Xanh rêu / Premium</p>
+                  <div class="product__prices">
+                    <span class="product__price">189.000đ</span>
+                    <del class="product__original-price">259.000đ</del>
+                    <span class="product__discount-percent">-27%</span>
+                  </div>
+                  <p class="product-ino__hint">Mua 2 giảm thêm 10%</p>
+                  <p class="product-ino__note">Sản phẩm được gửi từ kho Hà Nội</p>
+                </div>
+              </div>
+            </div>
+            <div class="col l-2-4">
+              <div class="product">
+                <div class="product__thumbnail">
+                  <div class="product__img">
+                    <a href="#"><img src="./assets/img/product/goods-1-1.jpg" alt="product image"></a>
+                  </div>
+                  <div class="product__select">
+                    <p>Thêm vào giỏ hàng +</p>
+                    <div class="option-select">
+                      <span class="option-select__item">S</span>
+                      <span class="option-select__item">M</span>
+                      <span class="option-select__item">L</span>
+                      <span class="option-select__item">XL</span>
+                      <span class="option-select__item">2XL</span>
+                    </div>
+                  </div>
+                  <div class="product__saleoff">
+                    <p>Sale <span class="product__discount-percent">27%</span></p>
+                  </div>
+                </div>
+                <div class="product__info">
+                  <div class="product__color">
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Trắng / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_trang.jpg);"></span>
+                    </div>
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Đen / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_den.jpg);"></span>
+                    </div>
+                    <div class="product__color-item product__color-item--active">
+                      <span class="color-checkmark" data-value="Xanh Forest / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_xanh_forest.jpg);"></span>
+                    </div>
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Xanh đậm / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/June2023/colorXanh_1A5.jpg);"></span>
+                    </div>
+                  </div>
+                  <div class="product__title">
+                    <a href="#" class="product__title-link">T-Shirt Contton Compact</a>
+                  </div>
+                  <p class="product__sub-title">Xanh rêu / Premium</p>
+                  <div class="product__prices">
+                    <span class="product__price">189.000đ</span>
+                    <del class="product__original-price">259.000đ</del>
+                    <span class="product__discount-percent">-27%</span>
+                  </div>
+                  <p class="product-ino__hint">Mua 2 giảm thêm 10%</p>
+                  <p class="product-ino__note">Sản phẩm được gửi từ kho Hà Nội</p>
+                </div>
+              </div>
+            </div>
+            <div class="col l-2-4">
+              <div class="product">
+                <div class="product__thumbnail">
+                  <div class="product__img">
+                    <a href="#"><img src="./assets/img/product/goods-1-1.jpg" alt="product image"></a>
+                  </div>
+                  <div class="product__select">
+                    <p>Thêm vào giỏ hàng +</p>
+                    <div class="option-select">
+                      <span class="option-select__item">S</span>
+                      <span class="option-select__item">M</span>
+                      <span class="option-select__item">L</span>
+                      <span class="option-select__item">XL</span>
+                      <span class="option-select__item">2XL</span>
+                    </div>
+                  </div>
+                  <div class="product__saleoff">
+                    <p>Sale <span class="product__discount-percent">27%</span></p>
+                  </div>
+                </div>
+                <div class="product__info">
+                  <div class="product__color">
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Trắng / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_trang.jpg);"></span>
+                    </div>
+                    <div class="product__color-item product__color-item--active">
+                      <span class="color-checkmark" data-value="Đen / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_den.jpg);"></span>
+                    </div>
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Xanh Forest / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_xanh_forest.jpg);"></span>
+                    </div>
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Xanh đậm / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/June2023/colorXanh_1A5.jpg);"></span>
+                    </div>
+                  </div>
+                  <div class="product__title">
+                    <a href="#" class="product__title-link">T-Shirt Contton Compact</a>
+                  </div>
+                  <p class="product__sub-title">Xanh rêu / Premium</p>
+                  <div class="product__prices">
+                    <span class="product__price">189.000đ</span>
+                    <del class="product__original-price">259.000đ</del>
+                    <span class="product__discount-percent">-27%</span>
+                  </div>
+                  <p class="product-ino__hint">Mua 2 giảm thêm 10%</p>
+                  <p class="product-ino__note">Sản phẩm được gửi từ kho Hà Nội</p>
+                </div>
+              </div>
+            </div>
+            <div class="col l-2-4">
+              <div class="product">
+                <div class="product__thumbnail">
+                  <div class="product__img">
+                    <a href="#"><img src="./assets/img/product/goods-1-1.jpg" alt="product image"></a>
+                  </div>
+                  <div class="product__select">
+                    <p>Thêm vào giỏ hàng +</p>
+                    <div class="option-select">
+                      <span class="option-select__item">S</span>
+                      <span class="option-select__item">M</span>
+                      <span class="option-select__item">L</span>
+                      <span class="option-select__item">XL</span>
+                      <span class="option-select__item">2XL</span>
+                    </div>
+                  </div>
+                  <div class="product__saleoff">
+                    <p>Sale <span class="product__discount-percent">27%</span></p>
+                  </div>
+                </div>
+                <div class="product__info">
+                  <div class="product__color">
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Trắng / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_trang.jpg);"></span>
+                    </div>
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Đen / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_den.jpg);"></span>
+                    </div>
+                    <div class="product__color-item product__color-item--active">
+                      <span class="color-checkmark" data-value="Xanh Forest / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_xanh_forest.jpg);"></span>
+                    </div>
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Xanh đậm / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/June2023/colorXanh_1A5.jpg);"></span>
+                    </div>
+                  </div>
+                  <div class="product__title">
+                    <a href="#" class="product__title-link">T-Shirt Contton Compact</a>
+                  </div>
+                  <p class="product__sub-title">Xanh rêu / Premium</p>
+                  <div class="product__prices">
+                    <span class="product__price">189.000đ</span>
+                    <del class="product__original-price">259.000đ</del>
+                    <span class="product__discount-percent">-27%</span>
+                  </div>
+                  <p class="product-ino__hint">Mua 2 giảm thêm 10%</p>
+                  <p class="product-ino__note">Sản phẩm được gửi từ kho Hà Nội</p>
+                </div>
+              </div>
+            </div>
+            <div class="col l-2-4">
+              <div class="product">
+                <div class="product__thumbnail">
+                  <div class="product__img">
+                    <a href="#"><img src="./assets/img/product/goods-1-1.jpg" alt="product image"></a>
+                  </div>
+                  <div class="product__select">
+                    <p>Thêm vào giỏ hàng +</p>
+                    <div class="option-select">
+                      <span class="option-select__item">S</span>
+                      <span class="option-select__item">M</span>
+                      <span class="option-select__item">L</span>
+                      <span class="option-select__item">XL</span>
+                      <span class="option-select__item">2XL</span>
+                    </div>
+                  </div>
+                  <div class="product__saleoff">
+                    <p>Sale <span class="product__discount-percent">27%</span></p>
+                  </div>
+                </div>
+                <div class="product__info">
+                  <div class="product__color">
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Trắng / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_trang.jpg);"></span>
+                    </div>
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Đen / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_den.jpg);"></span>
+                    </div>
+                    <div class="product__color-item product__color-item--active">
+                      <span class="color-checkmark" data-value="Xanh Forest / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_xanh_forest.jpg);"></span>
+                    </div>
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Xanh đậm / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/June2023/colorXanh_1A5.jpg);"></span>
+                    </div>
+                  </div>
+                  <div class="product__title">
+                    <a href="#" class="product__title-link">T-Shirt Contton Compact</a>
+                  </div>
+                  <p class="product__sub-title">Xanh rêu / Premium</p>
+                  <div class="product__prices">
+                    <span class="product__price">189.000đ</span>
+                    <del class="product__original-price">259.000đ</del>
+                    <span class="product__discount-percent">-27%</span>
+                  </div>
+                  <p class="product-ino__hint">Mua 2 giảm thêm 10%</p>
+                  <p class="product-ino__note">Sản phẩm được gửi từ kho Hà Nội</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="banner">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-8 m-12 c-12">
+              <div class="banner__right">
+                <a href="#" class="banner__link">
+                  <img src="./assets/img/banner/banner_1.jpg" alt="Banner" class="banner__img">
+                </a>
+              </div>
+            </div>
+            <div class="col l-4 m-12 c-12">
+              <div class="banner__right">
+                <div class="row">
+                  <div class="col l-12 m-12 c-12">
+                    <div class="banner__right-top">
+                      <a href="#" class="banner__link">
+                        <img src="./assets/img/banner/banner_2.jpg" alt="Banner" class="banner__img">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col l-12 m-12 c-12">
+                    <div class="banner__right-bottom">
+                      <a href="#" class="banner__link">
+                        <img src="./assets/img/banner/banner_3.jpg" alt="Banner" class="banner__img">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- new arrival -->
+      <section class="new-arrival">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-12 m-12 c-12">
+              <div class="new-arrival__heading">
+                <h2 class="new-arrival__title">SẢN PHẨM MỚI</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col l-2-4">
+              <div class="product">
+                <div class="product__thumbnail">
+                  <div class="product__img">
+                    <a href="#"><img src="./assets/img/product/goods-2.jpg" alt="product image"></a>
+                  </div>
+                  <div class="product__select">
+                    <p>Thêm vào giỏ hàng +</p>
+                    <div class="option-select">
+                      <span class="option-select__item">S</span>
+                      <span class="option-select__item">M</span>
+                      <span class="option-select__item">L</span>
+                      <span class="option-select__item">XL</span>
+                      <span class="option-select__item">2XL</span>
+                    </div>
+                  </div>
+                  <div class="product__saleoff">
+                    <p>Sale <span class="product__discount-percent">27%</span></p>
+                  </div>
+                </div>
+                <div class="product__info">
+                  <div class="product__color">
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Trắng / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_trang.jpg);"></span>
+                    </div>
+                    <div class="product__color-item product__color-item--active">
+                      <span class="color-checkmark" data-value="Đen / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_den.jpg);"></span>
+                    </div>
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Xanh Forest / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_xanh_forest.jpg);"></span>
+                    </div>
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Xanh đậm / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/June2023/colorXanh_1A5.jpg);"></span>
+                    </div>
+                  </div>
+                  <div class="product__title">
+                    <a href="#" class="product__title-link">T-Shirt Contton Compact</a>
+                  </div>
+                  <p class="product__sub-title">Xanh rêu / Premium</p>
+                  <div class="product__prices">
+                    <span class="product__price">189.000đ</span>
+                    <del class="product__original-price">259.000đ</del>
+                    <span class="product__discount-percent">-27%</span>
+                  </div>
+                  <p class="product-ino__hint">Mua 2 giảm thêm 10%</p>
+                  <p class="product-ino__note">Sản phẩm được gửi từ kho Hà Nội</p>
+                </div>
+              </div>
+            </div>
+            <div class="col l-2-4">
+              <div class="product">
+                <div class="product__thumbnail">
+                  <div class="product__img">
+                    <a href="#"><img src="./assets/img/product/goods-3.jpg" alt="product image"></a>
+                  </div>
+                  <div class="product__select">
+                    <p>Thêm vào giỏ hàng +</p>
+                    <div class="option-select">
+                      <span class="option-select__item">S</span>
+                      <span class="option-select__item">M</span>
+                      <span class="option-select__item">L</span>
+                      <span class="option-select__item">XL</span>
+                      <span class="option-select__item">2XL</span>
+                    </div>
+                  </div>
+                  <div class="product__saleoff">
+                    <p>Sale <span class="product__discount-percent">27%</span></p>
+                  </div>
+                </div>
+                <div class="product__info">
+                  <div class="product__color">
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Trắng / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_trang.jpg);"></span>
+                    </div>
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Đen / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_den.jpg);"></span>
+                    </div>
+                    <div class="product__color-item product__color-item--active">
+                      <span class="color-checkmark" data-value="Xanh Forest / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_xanh_forest.jpg);"></span>
+                    </div>
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Xanh đậm / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/June2023/colorXanh_1A5.jpg);"></span>
+                    </div>
+                  </div>
+                  <div class="product__title">
+                    <a href="#" class="product__title-link">T-Shirt Contton Compact</a>
+                  </div>
+                  <p class="product__sub-title">Xanh rêu / Premium</p>
+                  <div class="product__prices">
+                    <span class="product__price">189.000đ</span>
+                    <del class="product__original-price">259.000đ</del>
+                    <span class="product__discount-percent">-27%</span>
+                  </div>
+                  <p class="product-ino__hint">Mua 2 giảm thêm 10%</p>
+                  <p class="product-ino__note">Sản phẩm được gửi từ kho Hà Nội</p>
+                </div>
+              </div>
+            </div>
+            <div class="col l-2-4">
+              <div class="product">
+                <div class="product__thumbnail">
+                  <div class="product__img">
+                    <a href="#"><img src="./assets/img/product/goods-4.jpg" alt="product image"></a>
+                  </div>
+                  <div class="product__select">
+                    <p>Thêm vào giỏ hàng +</p>
+                    <div class="option-select">
+                      <span class="option-select__item">S</span>
+                      <span class="option-select__item">M</span>
+                      <span class="option-select__item">L</span>
+                      <span class="option-select__item">XL</span>
+                      <span class="option-select__item">2XL</span>
+                    </div>
+                  </div>
+                  <div class="product__saleoff">
+                    <p>Sale <span class="product__discount-percent">27%</span></p>
+                  </div>
+                </div>
+                <div class="product__info">
+                  <div class="product__color">
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Trắng / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_trang.jpg);"></span>
+                    </div>
+                    <div class="product__color-item product__color-item--active">
+                      <span class="color-checkmark" data-value="Đen / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_den.jpg);"></span>
+                    </div>
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Xanh Forest / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_xanh_forest.jpg);"></span>
+                    </div>
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Xanh đậm / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/June2023/colorXanh_1A5.jpg);"></span>
+                    </div>
+                  </div>
+                  <div class="product__title">
+                    <a href="#" class="product__title-link">T-Shirt Contton Compact</a>
+                  </div>
+                  <p class="product__sub-title">Xanh rêu / Premium</p>
+                  <div class="product__prices">
+                    <span class="product__price">189.000đ</span>
+                    <del class="product__original-price">259.000đ</del>
+                    <span class="product__discount-percent">-27%</span>
+                  </div>
+                  <p class="product-ino__hint">Mua 2 giảm thêm 10%</p>
+                  <p class="product-ino__note">Sản phẩm được gửi từ kho Hà Nội</p>
+                </div>
+              </div>
+            </div>
+            <div class="col l-2-4">
+              <div class="product">
+                <div class="product__thumbnail">
+                  <div class="product__img">
+                    <a href="#"><img src="./assets/img/product/goods-5.jpg" alt="product image"></a>
+                  </div>
+                  <div class="product__select">
+                    <p>Thêm vào giỏ hàng +</p>
+                    <div class="option-select">
+                      <span class="option-select__item">S</span>
+                      <span class="option-select__item">M</span>
+                      <span class="option-select__item">L</span>
+                      <span class="option-select__item">XL</span>
+                      <span class="option-select__item">2XL</span>
+                    </div>
+                  </div>
+                  <div class="product__saleoff">
+                    <p>Sale <span class="product__discount-percent">27%</span></p>
+                  </div>
+                </div>
+                <div class="product__info">
+                  <div class="product__color">
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Trắng / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_trang.jpg);"></span>
+                    </div>
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Đen / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_den.jpg);"></span>
+                    </div>
+                    <div class="product__color-item product__color-item--active">
+                      <span class="color-checkmark" data-value="Xanh Forest / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_xanh_forest.jpg);"></span>
+                    </div>
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Xanh đậm / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/June2023/colorXanh_1A5.jpg);"></span>
+                    </div>
+                  </div>
+                  <div class="product__title">
+                    <a href="#" class="product__title-link">T-Shirt Contton Compact</a>
+                  </div>
+                  <p class="product__sub-title">Xanh rêu / Premium</p>
+                  <div class="product__prices">
+                    <span class="product__price">189.000đ</span>
+                    <del class="product__original-price">259.000đ</del>
+                    <span class="product__discount-percent">-27%</span>
+                  </div>
+                  <p class="product-ino__hint">Mua 2 giảm thêm 10%</p>
+                  <p class="product-ino__note">Sản phẩm được gửi từ kho Hà Nội</p>
+                </div>
+              </div>
+            </div>
+            <div class="col l-2-4">
+              <div class="product">
+                <div class="product__thumbnail">
+                  <div class="product__img">
+                    <a href="#"><img src="./assets/img/product/goods-6.jpg" alt="product image"></a>
+                  </div>
+                  <div class="product__select">
+                    <p>Thêm vào giỏ hàng +</p>
+                    <div class="option-select">
+                      <span class="option-select__item">S</span>
+                      <span class="option-select__item">M</span>
+                      <span class="option-select__item">L</span>
+                      <span class="option-select__item">XL</span>
+                      <span class="option-select__item">2XL</span>
+                    </div>
+                  </div>
+                  <div class="product__saleoff">
+                    <p>Sale <span class="product__discount-percent">27%</span></p>
+                  </div>
+                </div>
+                <div class="product__info">
+                  <div class="product__color">
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Trắng / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_trang.jpg);"></span>
+                    </div>
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Đen / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_den.jpg);"></span>
+                    </div>
+                    <div class="product__color-item product__color-item--active">
+                      <span class="color-checkmark" data-value="Xanh Forest / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/May2022/vai_xanh_forest.jpg);"></span>
+                    </div>
+                    <div class="product__color-item">
+                      <span class="color-checkmark" data-value="Xanh đậm / Trơn"
+                        style="background-image: url(https://media.coolmate.me/cdn-cgi/image/width=160,height=160,quality=80,format=auto/uploads/June2023/colorXanh_1A5.jpg);"></span>
+                    </div>
+                  </div>
+                  <div class="product__title">
+                    <a href="#" class="product__title-link">T-Shirt Contton Compact</a>
+                  </div>
+                  <p class="product__sub-title">Xanh rêu / Premium</p>
+                  <div class="product__prices">
+                    <span class="product__price">189.000đ</span>
+                    <del class="product__original-price">259.000đ</del>
+                    <span class="product__discount-percent">-27%</span>
+                  </div>
+                  <p class="product-ino__hint">Mua 2 giảm thêm 10%</p>
+                  <p class="product-ino__note">Sản phẩm được gửi từ kho Hà Nội</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- feedback -->
+      <section class="feedback">
+
+      </section>
+
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="grid wide">
+        <div class="row">
+          <div class="col l-4 m-6 c-12">
+            <div class="footer__block">
+              <h4 class="footer__title">THÔNG TIN CÔNG TY</h4>
+              <p class="shop__about">
+                Thương hiệu thời trang của người trẻ hiện đại! Ra đời vào năm 2023, F5 luôn nỗ lực với
+                sứ mệnh tạo nên xu hướng thời trang mang đến sự tin tưởng và năng lượng tích cực cho
+                khách hàng
+              </p>
+              <div class="footer__address">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>140/47 Ấp Đông, Xã TTT, Huyện HM, TP HCM</span>
+              </div>
+              <div class="footer__phone">
+                <i class="fa-solid fa-phone"></i>
+                <span>1900 1111</span>
+              </div>
+              <div class="footer__mail">
+                <i class="fa-solid fa-envelope"></i>
+                <span>f5-support@xmail.com</span>
+              </div>
+            </div>
+          </div>
+          <div class="col l-2 m-6 c-12">
+            <div class="footer__block">
+              <h4 class="footer__title">MENU</h4>
+              <ul class="footer__menu">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Liên hệ</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col l-3 m-6 c-12">
+            <div class="footer__block">
+              <h4 class="footer__title">HỖ TRỢ KHÁCH HÀNG</h4>
+              <ul class="footer__policy">
+                <li><a href="#">Đơn hàng</a></li>
+                <li><a href="#">Chính sách giao hàng</a></li>
+                <li><a href="#">Chính sách đổi trả</a></li>
+                <li><a href="#">Chính sách bán hàng</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col l-3 m-6 c-12">
+            <div class="footer__block">
+              <h4 class="footer__title">THEO DÕI</h4>
+              <div class="footer__media">
+                <div class="footer__media-facebook">
+                  <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="footer__media-tiktok">
+                  <i class="fa-brands fa-tiktok"></i>
+                </div>
+                <div class="footer__media-youtube">
+                  <i class="fa-brands fa-youtube"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col l-12 m-12 c-12">
+            <div class="copyright">
+              <p>© Bản quyền thuộc về F5</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- login/signup modal -->
+    <div class="modal js-modal">
+      <div class="modal-container js-modal-container">
+        <!-- login form -->
+        <form class="form" id="form-login">
+          <div class="form__content">
+            <div class="form__close js-modal-close"><i class="form__close-icon fa-solid fa-xmark"></i></div>
+            <h3 class="form__header">ĐĂNG NHẬP</h3>
+            <p class="form__sub-header">Nếu chưa có tài khoản, đăng ký <span class="form__switch-form">tại đây</span>
+            </p>
+
+            <div class="form__field">
+              <label for="phone-email">Số điện thoại / email</label>
+              <input type="phone" id="phone-email" class="form__control" placeholder="Số điện thoại hoặc email"
+                name="phone-email">
+              <span class="form__error-msg"></span>
+            </div>
+
+            <div class="form__field">
+              <label for="password">Mật khẩu</label>
+              <input type="password" id="password" class="form__control" placeholder="Mật khẩu" name="password">
+              <span class="form__error-msg"></span>
+            </div>
+
+            <div class="form__footer">
+              <button type="submit" class="form__submit btn">Đăng nhập</button>
+            </div>
+
+          </div>
+        </form>
+
+        <!-- register form -->
+        <form class="form" id="form-register" style="display: none;">
+          <div class="form__content">
+            <div class="form__close js-modal-close"><i class="form__close-icon fa-solid fa-xmark"></i></div>
+            <h3 class="form__header">ĐĂNG KÝ THÀNH VIÊN</h3>
+            <p class="form__sub-header">Nếu đã có tài khoản, đăng nhập <span class="form__switch-form">tại đây</span>
+            </p>
+
+            <div class="form__field">
+              <label for="fullname">Tên đầy đủ</label>
+              <input type="text" id="fullname" class="form__control" placeholder="vd: Paul Bui" name="fullname">
+              <span class="form__error-msg"></span>
+            </div>
+
+            <div class="form__field">
+              <label for="phone">Số điện thoại</label>
+              <input type="phone" id="phone" class="form__control" placeholder="vd: 0911222333" name="phone">
+              <span class="form__error-msg"></span>
+            </div>
+
+            <div class="form__field">
+              <label for="email">Email</label>
+              <input type="email" id="email" class="form__control" placeholder="vd: paulbui@xmail.com" name="email">
+              <span class="form__error-msg"></span>
+            </div>
+
+            <div class="form__field">
+              <label for="password">Mật khẩu</label>
+              <input type="password" id="password" class="form__control" placeholder="Nhập mật khẩu" name="password">
+              <span class="form__error-msg"></span>
+            </div>
+
+            <div class="form__field">
+              <label for="confirm-password">Nhập lại mật khẩu</label>
+              <input type="password" id="confirm-password" class="form__control" placeholder="Nhập lại mật khẩu"
+                name="confirm-password">
+              <span class="form__error-msg"></span>
+            </div>
+
+            <div class="form__footer">
+              <button type="submit" class="form__submit btn">Đăng ký</button>
+
+              <div class="register__confirm">
+                <p>Bằng cách đăng ký bạn đồng ý với các <a href="#">điều khoản sử dụng</a> của chúng tôi
+                </p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/form.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      Validator({
+        form: '#form-login',
+        formFieldSelector: '.form__field',
+        formErrorSelector: '.form__error-msg',
+        rules: [
+          Validator.isRequired('#phone-email', 'Vui lòng nhập số điện thoại hoặc email'),
+          Validator.isPhoneOrEmail('#phone-email', 'Vui lòng nhập đúng số điện thoại hoặc email'),
+          Validator.isRequired('#password', 'Vui lòng nhập mật khẩu'),
+          Validator.minLength('#password', 6, 'Mật khẩu phải từ 6 kí tự trở lên')
+        ],
+        onSubmit: function (data) {
+          // Call API
+          console.log(data);
+          alert('Đăng nhập thành công!')
+        }
+      });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      // Mong muốn của chúng ta
+      Validator({
+        form: '#form-register',
+        formFieldSelector: '.form__field',
+        formErrorSelector: '.form__error-msg',
+        rules: [
+          Validator.isRequired('#fullname', 'Vui lòng nhập tên đầy đủ của bạn'),
+          Validator.isRequired('#phone', 'Vui lòng nhập số điện thoại của bạn'),
+          Validator.isRequired('#email', 'Vui lòng nhập email của bạn'),
+          Validator.isRequired('#password', 'Vui lòng nhập mật khẩu'),
+          Validator.isRequired('#confirm-password', 'Vui lòng nhập nhập lại mật khẩu'),
+          Validator.isPhone('#phone'),
+          Validator.isEmail('#email'),
+          Validator.minLength('#password', 6),
+          Validator.isConfirmed('#confirm-password', function () {
+            return document.querySelector('#form-register #password').value;
+          }, 'Mật khẩu nhập lại không chính xác')
+        ],
+        onSubmit: function (data) {
+          // Call API
+          console.log(data);
+          alert('Đăng ký tài khoản thành công!')
+        }
+      });
+    });
+  </script>
 </body>
+
 </html>
