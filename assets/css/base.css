@@ -3,7 +3,7 @@
     --text-black: #202124;
     --text-red: #f02657;
     --primary-color: #05aa6d;
-    --primary-background-color: #fff;
+    --bgr-color: #fff;
 }
 
 * {
@@ -14,6 +14,7 @@
 
 html, body {
     touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
 }
 
 html {

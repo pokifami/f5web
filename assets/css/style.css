@@ -884,7 +884,7 @@
     left: 0;
     display: flex;
     flex-direction: column;
-    background-color: var(--primary-background-color);
+    background-color: var(--bgr-color);
 }
 
 .mobile__menu {
@@ -1107,3 +1107,25 @@
 }
 
 /* Nav ----------------> End */
+
+/* Slider ----------------> Start */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #fff;
+}
+
+.swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+}
+
+.swiper-pagination-bullet-active {
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+}
+
+
+
+/* Slider ----------------> End */

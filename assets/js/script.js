@@ -12,7 +12,75 @@ document.querySelector('.has-angle-down .angle-down-icon').addEventListener('cli
     subMenuList1.classList.toggle('is-active')
 });
 
+
+function handleResize() {
+    const width = window.innerWidth;
+    if (width > 1023) {
+      navMenu.classList.remove('is-active');
+      subMenuList1.classList.remove('is-active')
+    }
+}
+window.addEventListener('resize', handleResize);
+
+
 // nav -----------------> end
+
+
+// slider -----------------> start
+const swiper = new Swiper(".swiper-slider", {
+    // Optional parameters
+    centeredSlides: true,
+    slidesPerView: 1,
+    grabCursor: true,
+    freeMode: false,
+    loop: true,
+    mousewheel: false,
+    keyboard: {
+      enabled: false
+    },
+  
+    // Enabled autoplay mode
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false
+    // },
+  
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: false,
+      clickable: true
+    },
+  
+    // If we need navigation
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+  
+    // Responsive breakpoints
+    breakpoints: {
+      640: {
+        slidesPerView: 1.25,
+        spaceBetween: 20
+      },
+      1024: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      }
+    }
+  });
+
+// slider -----------------> end
+
+
+
+
+
+
+
+
+
 
 
 
