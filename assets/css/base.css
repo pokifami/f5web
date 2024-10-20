@@ -91,6 +91,7 @@ input {
 }
 
 /* Quantity control */
+/* 
 .quantity-control {
     margin-top: 5px;
     display: flex;
@@ -116,7 +117,7 @@ input {
 .minus-btn:hover,
 .plus-btn:hover {
     background-color: #ccc;
-}
+} */
 
 
 /* Start ---------------------------> modal */
